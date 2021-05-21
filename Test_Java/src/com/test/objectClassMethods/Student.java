@@ -45,7 +45,7 @@ public class Student {
 			return false;
 		}
 		Student student = (Student)obj;
-		return (this.id==student.id)&&(this.name.equals(student.name));
+		return (this.id==student.id)&&(name != null ? this.name.equals(student.name) : student.name==null);
 	}
 	
 	@Override
